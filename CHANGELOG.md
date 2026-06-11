@@ -23,3 +23,9 @@
 [`Claude`](https://claude.ai) - Одна из мощнейших нейросетей для програмирования / вайб кодинга
 
 [`Microsoft Copilot`](https://copilot.microsoft.com) - Copilot нейросеть от Microsoft
+
+### [V1.1.0](https://github.com/AlbeePython/NeuroFix/releases/tag/update_1.1.0)
+- Авто проверка на наличие обновлений ПО
+- Обновлённый дизайн (UI)
+- Изменено название с AiFix на NeuroFix
+- Список доустпных AI сервисов не изменился
