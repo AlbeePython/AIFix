@@ -1,0 +1,67 @@
+name: "💡 Предложение идеи (Feature Request)"
+description: "Предложить новую функцию, улучшение или идею для проекта"
+title: "[FEATURE]: "
+labels: ["enhancement", "feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        У вас есть крутая идея, как улучшить проект? Отлично! 
+        Пожалуйста, опишите её максимально подробно, чтобы мы могли понять контекст и техническую реализуемость.
+
+  - type: textarea
+    id: problem_relation
+    attributes:
+      label: "Какую проблему решит эта фича? (Связанная проблема)"
+      description: "Опишите, с каким неудобством или ограничением вы сталкиваетесь сейчас. (Например: 'Мне не нравится интерфес потому что...' ИЛИ `Ваша проблема`)"
+      placeholder: "Было бы здорово избавиться от..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: "Предлагаемое решение"
+      description: "Четкое и лаконичное описание того, как именно должна работать новая функция. Как это должно выглядеть для пользователя или в коде?"
+      placeholder: "Я предлагаю добавить новый параметр в конфиг / новую кнопку, которая будет..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Альтернативные решения"
+      description: "Думали ли вы об альтернативных путях решения? Возможно, это уже можно сделать как-то иначе?"
+      placeholder: "Сейчас я решаю это с помощью костыля/стороннего скрипта, но..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Как вы оцениваете важность этой фичи?"
+      options:
+        - "🔥 Критически важно (сильно расширит возможности проекта)"
+        - "⭐ Полезно (было бы очень удобно иметь)"
+        - "📝 Минорное улучшение (просто приятная мелочь / UI фикс)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Дополнительный контекст"
+      description: "Скриншоты, примеры реализации из других проектов, ссылки на документацию или любые другие материалы, которые могут помочь."
+      placeholder: "В проекте XYZ это реализовано вот так: [ссылка]"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreements
+    attributes:
+      label: "Перед отправкой убедитесь, что:"
+      options:
+        - label: "Я проверил, что такой функции ещё нет в проекте"
+          required: true
+        - label: "Я поискал похожие Issue/Discussions и идея не обсуждалась ранее"
+          required: true
