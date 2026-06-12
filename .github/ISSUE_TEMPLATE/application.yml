@@ -1,0 +1,49 @@
+name: "📋 Заявка / Анкета"
+description: "Заполните форму для подачи заявки разработчикам"
+title: "[Заявка]: "
+labels: ["application", "pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за интерес к нашему проекту! Пожалуйста, честно и полностью заполните форму ниже.
+
+  - type: input
+    id: real_name
+    attributes:
+      label: "Реальное имя"
+      placeholder: "Например, Александр"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: age
+    attributes:
+      label: "Возраст"
+      description: "Минимальный возраст для подачи — 12 лет"
+      options:
+        - "12"
+        - "13"
+        - "14"
+        - "15"
+        - "16"
+        - "17"
+        - "18+"
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: "Контактные данные (Telegram или Discord)"
+      placeholder: "Например: TG: @username / Discord: username#0000"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: readme_agreement
+    attributes:
+      label: "Ознакомление с документацией"
+      options:
+        - label: "Я полностью ознакомлен(а) с файлом [README](https://github.com/AlbeePython/NeuroFix/blob/main/README.md) проекта и согласен(а) с его условиями."
+          required: true
